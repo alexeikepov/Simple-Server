@@ -15,6 +15,10 @@ app.get("/about", (request, response) => {
   response.sendFile(path.join(__dirname, "public", "about.html"));
 });
 
+app.use((request, response) => {
+  response.sendFile(path.join(__dirname, "public", "note-found.html"));
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}/`);
 });
