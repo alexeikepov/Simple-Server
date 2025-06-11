@@ -16,7 +16,7 @@ app.get("/about", (request, response) => {
 });
 
 app.use((request, response) => {
-  response.sendFile(path.join(__dirname, "public", "note-found.html"));
+  response.sendFile(path.join(__dirname, "public", "not-found.html"));
 });
 
 app.listen(PORT, () => {
